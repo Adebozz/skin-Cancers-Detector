@@ -21,13 +21,14 @@ input[type="file"] {
 }
 
 .upload-label{
-    display: inline-block;
+    display: flex;
     padding: 12px 30px;
     background: #39D2B4;
     color: #fff;
     font-size: 1em;
     transition: all .4s;
     cursor: pointer;
+    justify-content: center;
 }
 
 .upload-label:hover{
@@ -48,3 +49,21 @@ input[type="file"] {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+h2, h3{
+    display: flex;
+    justify-content: center;
+}
+
+.img-preview{
+    margin-left: 40%;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+
+
