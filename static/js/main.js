@@ -3,6 +3,11 @@ $(document).ready(function () {
   $(".image-section").hide();
   $(".loader").hide();
   $("#result").hide();
+  $("#result-info").hide();
+
+  //   $("#melanoma").hide();
+  //   $("#basal").hide();
+  //   $("#squamous").hide();
 
   // Upload Preview
   function readURL(input) {
@@ -24,6 +29,7 @@ $(document).ready(function () {
     $("#btn-predict").show();
     $("#result").text("");
     $("#result").hide();
+    $("#result-info").hide();
     readURL(this);
   });
 
@@ -48,7 +54,21 @@ $(document).ready(function () {
         // Get and display the result
         $(".loader").hide();
         $("#result").fadeIn(600);
-        $("#result").text(" The predicted class is  " + data);
+        $("#result").text("The predicted class is " + data);
+        if (data === "melanoma") {
+          $("#result-info").show();
+          $("#squamous").hide();
+          $("#basal").hide();
+        } else if (data === "squamous cell carcinoma") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#basal").hide();
+        } else if (data === "basal cell carcinoma") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#squamous").hide();
+        }
+
         console.log("Success!");
       },
     });
