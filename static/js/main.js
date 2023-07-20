@@ -59,14 +59,58 @@ $(document).ready(function () {
           $("#result-info").show();
           $("#squamous").hide();
           $("#basal").hide();
+          $("#pbk").hide();
+          $("#vas").hide();
+          $("#ak").hide();
+          $("#nevi").hide();
         } else if (data === "squamous cell carcinoma") {
           $("#result-info").show();
           $("#melanoma").hide();
           $("#basal").hide();
+          $("#pbk").hide();
+          $("#vas").hide();
+          $("#ak").hide();
+          $("#nevi").hide();
         } else if (data === "basal cell carcinoma") {
           $("#result-info").show();
           $("#melanoma").hide();
           $("#squamous").hide();
+          $("#pbk").hide();
+          $("#vas").hide();
+          $("#ak").hide();
+          $("#nevi").hide();
+        } else if (data === "actinic keratosis") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#basal").hide();
+          $("#pbk").hide();
+          $("#vas").hide();
+          $("#squamous").hide();
+          $("#nevi").hide();
+        } else if (data === "nevus") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#squamous").hide();
+          $("#pbk").hide();
+          $("#vas").hide();
+          $("#ak").hide();
+          $("#basal").hide();
+        } else if (data === "pigmented benign keratosis") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#basal").hide();
+          $("#squamous").hide();
+          $("#vas").hide();
+          $("#ak").hide();
+          $("#nevi").hide();
+        } else if (data === "vascular lesion") {
+          $("#result-info").show();
+          $("#melanoma").hide();
+          $("#squamous").hide();
+          $("#pbk").hide();
+          $("#basal").hide();
+          $("#ak").hide();
+          $("#nevi").hide();
         }
 
         console.log("Success!");
