@@ -54,7 +54,7 @@ $(document).ready(function () {
         // Get and display the result
         $(".loader").hide();
         $("#result").fadeIn(600);
-        $("#result").text("The predicted class is " + data);
+        $("#result").text("The predicted image is " + data);
         if (data === "melanoma") {
           $("#result-info").show();
           $("#squamous").hide();
