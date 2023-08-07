@@ -57,15 +57,16 @@ h2, h3{
     justify-content: center;
 }
 
-
-
-
 .button{
     display: flex;
     justify-content: center;
 }
 
+.guide{
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    width: 20%;
+    
 
-
-
-
+}
