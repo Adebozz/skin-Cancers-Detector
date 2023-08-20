@@ -4,10 +4,7 @@ $(document).ready(function () {
   $(".loader").hide();
   $("#result").hide();
   $("#result-info").hide();
-
-  //   $("#melanoma").hide();
-  //   $("#basal").hide();
-  //   $("#squamous").hide();
+  $("#guid").hide();
 
   // Upload Preview
   function readURL(input) {
@@ -118,3 +115,6 @@ $(document).ready(function () {
     });
   });
 });
+function click() {
+  document.getElementById("guide").style.display = "unset";
+}

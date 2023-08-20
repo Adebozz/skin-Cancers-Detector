@@ -62,11 +62,24 @@ h2, h3{
     justify-content: center;
 }
 
-.guide{
+#guid{
     position: absolute;
+    background: rgba(52, 58, 64, 1);
+    padding: 10px;
     top: 100%;
     right: 2%;
     width: 20%;
-    
-
+    color:white;
+    display:none;
 }
+.gh{
+    display: flex;
+    align-self: center;
+    text-decoration: underline;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
